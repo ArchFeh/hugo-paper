@@ -83,7 +83,7 @@
   <!-- Production -->
   {{ if or hugo.IsProduction (eq site.Params.env "production") }}
   <!---->
-  {{ template "_internal/google_analytics.html" . }}
+  {{ template "cookie-consent.html" . }}
   <!---->
   {{ template "_internal/schema.html" . }}
   <!---->
