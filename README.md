@@ -1,14 +1,14 @@
 <div align="center">
 
 Link in bio to **widgets**,
-your online **home screen**. ➫ [🔗 kee.so](https://kee.so/)
+your online **home screen**. ➫ [kee.so](https://kee.so/)
 
 </div>
 
 ---
 
 <div align="center">
-<h1>Paper <sup><sup><sub>6.25</sub></sup></sup></h1>
+<h1>Paper <sup><sup><sub>6.27</sub></sup></sup></h1>
 
 Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
 
@@ -28,7 +28,6 @@ Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
 
 ![](./images/screenshot.png)
 ![](./images/screenshot_dark.png)
-![](./images/screenshot_mobile.png)
 ![](./images/pagespeed.png)
 
 ## Options
@@ -36,7 +35,9 @@ Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
 Available options to `config.toml` or `hugo.toml`:
 
 ```toml
-disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # use disqus comments
+[services]
+  [services.disqus]
+    shortname = 'YOUR_DISQUS_SHORTNAME'     # use disqus comments
 
 [params]
   # color style
@@ -67,6 +68,9 @@ disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # use disqus comments
   graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
   favicon = "favicon.ico"                   # customize the default favicon
   appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
+
+  # RTL supprot
+  direction = "rtl"                         # RTL support for Right-to-left languages
 
   # giscus
 [params.giscus]
